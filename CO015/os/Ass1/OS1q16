@@ -1,0 +1,8 @@
+echo "Enter file path : "
+read ch
+cd "$ch"
+echo "Enter file name : "
+read fn
+echo "`wc -m $fn`"
+echo "`wc -w $fn`"
+echo "`wc -l $fn`"

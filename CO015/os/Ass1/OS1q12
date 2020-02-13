@@ -1,0 +1,11 @@
+echo "Enter number : "
+read n
+s=0
+d=0
+while [ $n -gt 0 ]
+do
+	s=$(( $n % 10 ))
+	d=$(( $d + $s ))
+	n=$(( $n / 10 ))
+done
+echo "$d"

@@ -1,0 +1,19 @@
+echo "1 : users"
+echo "2 : calender"
+echo "3 : date"
+echo "Enter number what you want : "
+read ch
+case $ch in
+        1)
+                echo "`users | wc`"
+                ;;
+        2)
+                echo "`cal -y`"
+                ;;
+        3)
+                echo "`date`"
+                ;;
+        *)
+                echo "Enter between 1 2 3"
+                ;;
+        esac
