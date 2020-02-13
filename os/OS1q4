@@ -1,0 +1,4 @@
+echo "Enter path : "
+read ch
+cd "$ch"
+echo "`ls | wc -l`"

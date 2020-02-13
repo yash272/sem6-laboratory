@@ -1,0 +1,1 @@
+ls -algG --time-style=+%s | grep ^[^d] | awk -vlimit=$(date +%s -d '10 hours ago') '$4 > limit { print substr($0, index($0, $4) + length($4) + 1) }' 

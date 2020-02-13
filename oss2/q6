@@ -1,0 +1,11 @@
+if [ -d "$1" ];
+then
+    cd "$1"
+    echo "`ls -d */`"
+    for i in */ 
+    do 
+    echo "`ls "$i" | wc -l`" 
+    done
+else
+    echo "$1 is not a directory."
+fi

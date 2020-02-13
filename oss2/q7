@@ -1,0 +1,7 @@
+echo "Enter specific word : "
+read w
+p=`pwd`
+for i in $p 
+do
+echo "`grep $w *`"
+done

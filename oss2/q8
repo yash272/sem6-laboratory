@@ -1,0 +1,5 @@
+cd "$1"
+for i in / 
+do 
+echo "`ls "$i" | find . -type f -perm -755 | wc -l`" 
+done

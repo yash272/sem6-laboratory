@@ -1,0 +1,20 @@
+echo "Question 1 : "
+./q1
+echo "Question 2 : "
+./q2 5
+echo "Question 3 : "
+./q3
+echo "Question 4 : "
+./q4
+echo "Question 5 : "
+./q5
+echo "Question 6 : "
+./q6 
+echo "Question 7 : "
+./q7 
+echo "Question 8 : "
+./q8
+echo "Question 9 : "
+./q9 
+echo "Question 10 : "
+./q10 

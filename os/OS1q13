@@ -1,0 +1,9 @@
+echo "Enter number : "
+read n
+d=1
+while [ $n -gt 0 ]
+do
+	d=$(( $d * $n ))
+	n=$(( $n - 1 ))
+done
+echo "$d"

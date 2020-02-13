@@ -1,0 +1,5 @@
+echo "Enter file path : "
+read ch
+cd "$ch"
+echo "`find . -type f -size +10c | ls -lS | awk '{print $5, $9}'`"
+echo "`ls -lS | awk '{print $5, $9}' | find . -type f -size +10c | wc -l`"

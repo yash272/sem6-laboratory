@@ -1,0 +1,10 @@
+echo "enter number :"
+read n
+echo "enter word :"
+read name
+echo " "
+while [ $n -gt 0 ]
+do
+        echo "$name"
+        n=$(( $n - 1 ))
+done 
