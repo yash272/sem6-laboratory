@@ -1,5 +1,0 @@
-echo "Enter source path : "
-read s
-echo "Enter destination path : "
-read d
-cp "$s" "$d"

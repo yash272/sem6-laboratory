@@ -12,7 +12,6 @@ int main(){
     // scanf("%d %d %d",&ya,&yb,&yc);
     int n;
     printf("Enter number for algo : ");
-    scanf("%d",&n);
     initgraph(&gdriver, &gmode, "c:\\turboc3\\bgi");
 
 
