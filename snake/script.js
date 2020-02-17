@@ -13,14 +13,6 @@ ground.src = "ground.png";
 
 const foodImg = new Image();
 foodImg.src = "food.png";
-// const upImg = new Image();
-// upImg.src = "up.png";
-// const leftImg = new Image();
-// leftImg.src = "left.png";
-// const rightImg = new Image();
-// rightImg.src = "right.png";
-// const downImg = new Image();
-// downImg.src = "down.png";
 
 const pupImg = new Image();
 pupImg.src = "pup.png";
@@ -71,6 +63,7 @@ function direction(event) {
 function collision(head, array) {
     for (let i = 0; i < array.length; i++) {
         if (head.x == array[i].x && head.y == array[i].y) {
+            console.log("game over");
             return true;
         }
     }
@@ -86,10 +79,7 @@ function collision(head, array) {
 
 function draw() {
     ctx.drawImage(ground, 0, 0, 912, 912);
-    // ctx.drawImage(upImg, 1012, 0, 100, 100);
-    // ctx.drawImage(downImg, 1012, 100, 100, 100);
-    // ctx.drawImage(leftImg, 912, 100, 100, 100);
-    // ctx.drawImage(rightImg, 1112, 100, 100, 100);
+
     if (score >= 5) {
         for (let i = 0; i < plusx.length; i++) {
             ctx.fillStyle = "black";
@@ -112,19 +102,15 @@ function draw() {
     let snakeY = snake[0].y;
     if (d == "LEFT") {
         snakeX -= box;
-        // ctx.drawImage(pleftImg, 912, 100, 100, 100);
     }
     if (d == "UP") {
         snakeY -= box;
-        // ctx.drawImage(pupImg, 1012, 0, 100, 100);
     }
     if (d == "RIGHT") {
         snakeX += box;
-        // ctx.drawImage(prightImg, 1112, 100, 100, 100);
     }
     if (d == "DOWN") {
         snakeY += box;
-        // ctx.drawImage(downImg, 1012, 100, 100, 100);
     }
     let newHead = {
         x: snakeX,
