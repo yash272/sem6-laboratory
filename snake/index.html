@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .card {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<div style="position: relative;">
+
+    <div id="game-over" class="card text-center bg-light rounded-lg" style="position:absolute; width:250px !important; display:none;z-index:9999; left : 640px; top: 250px;">
+        <div class="card-body">
+            <h5 class="card-title">Game over</h5>
+            <p class="card-text"></p>
+            <div class="inline">
+                <div class="d-inline">score :</div>
+                <div id="score" class="score d-inline">0</div>
+            </div>
+            <p></p>
+            <a href="index.html" class="btn btn-success rounded-300">Play Again</a>
+
+        </div>
+    </div>
+    <canvas id="snake" width="608" height="608">
+    </canvas>
+</div>
+<script src="snake.js"></script>
+
+</html>
