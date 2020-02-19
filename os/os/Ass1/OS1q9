@@ -1,7 +1,0 @@
-echo "Enter number to start with :"
-read n
-while test $n != 0
-do
-	n="$(( n - 1 ))"
-	echo "$n"
-done

@@ -1,6 +1,0 @@
-echo "Enter file path : "
-read ch
-cd "$ch"
-echo "Enter file name : "
-read fn
-echo "`grep -cv '\S' $fn`"

@@ -1,7 +1,0 @@
-t="`date +%H`"
-if [ $t -gt 12 ]
-then
-        echo "Good Evening"
-else
-        echo "Good Morning"
-fi

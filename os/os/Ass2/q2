@@ -1,7 +1,0 @@
-read -p "Enter number : " number
-read -p "Enter word : " name
-
-for (( c=1; c<=$number; c++ ))
-do 
-    echo "$name"
-done

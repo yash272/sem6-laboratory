@@ -1,7 +1,10 @@
-read -p "Enter number : " number
-read -p "Enter word : " name
-
-for (( c=1; c<=$number; c++ ))
-do 
-    echo "$name"
-done
+echo "enter number :"
+read n
+echo "enter word :"
+read name
+echo " "
+while [ $n -gt 0 ]
+do
+        echo "$name"
+        n=$(( $n - 1 ))
+done 
