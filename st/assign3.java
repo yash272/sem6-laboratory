@@ -61,7 +61,8 @@ class TestClass {
                 }
                 System.out.print(arr[i][j]+" ");
             }
-            System.out.println();
+            System.out.print("\n");
+            
         }
     }
 }
